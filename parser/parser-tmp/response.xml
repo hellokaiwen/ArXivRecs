@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3Dcat%3A%22cs.AR%22%26id_list%3D%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=cat:"cs.AR"&amp;id_list=&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/an/mUsLs7kFki7J+UYBozT0h4zE</id>
+  <updated>2024-04-29T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">4811</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9810011v1</id>
+    <updated>1998-10-12T10:11:05Z</updated>
+    <published>1998-10-12T10:11:05Z</published>
+    <title>Flysig: Dataflow Oriented Delay-Insensitive Processor for Rapid
+  Prototyping of Signal Processing</title>
+    <summary>  As the one-chip integration of HW-modules designed by different companies
+becomes more and more popular reliability of a HW-design and evaluation of the
+timing behavior during the prototype stage are absolutely necessary. One way to
+guarantee reliability is the use of robust design styles, e.g.,
+delay-insensitivity. For early timing evaluation two aspects must be
+considered: a) The timing needs to be proportional to technology variations and
+b) the implemented architecture should be identical for prototype and target.
+The first can be met also by delay-insensitive implementation. The latter one
+is the key point. A unified architecture is needed for prototyping as well as
+implementation. Our new approach to rapid prototyping of signal processing
+tasks is based on a configurable, delay-insensitive implemented processor
+called Flysig. In essence, the Flysig processor can be understood as a complex
+FPGA where the CLBs are substituted by bit-serial operators. In this paper the
+general concept is detailed and first experimental results are given for
+demonstration of the main advantages: delay-insensitive design style, direct
+correspondence between prototyping and target architecture, high performance
+and reasonable shortening of the design cycle.
+</summary>
+    <author>
+      <name>Wolfram Hardt</name>
+    </author>
+    <author>
+      <name>Bernd Kleinjohann</name>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1109/IWRSP.1998.676682</arxiv:doi>
+    <link title="doi" href="http://dx.doi.org/10.1109/IWRSP.1998.676682" rel="related"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">6 pages, 10 figures</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Nineth IEEE International Workshop on Rapid System Prototyping
+  1998, Belgium, IEEE Computer Society Press</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9810011v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9810011v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="C.1.3; C.3" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/0111029v1</id>
+    <updated>2001-11-09T15:08:12Z</updated>
+    <published>2001-11-09T15:08:12Z</published>
+    <title>Versatile Data Acquisition and Controls for Epics Using Vme-Based Fpgas</title>
+    <summary>  Field-Programmable Gate Arrays (FPGAs) have provided Thomas Jefferson
+National Accelerator Facility (Jefferson Lab) with versatile VME-based data
+acquisition and control interfaces with minimal development times. FPGA designs
+have been used to interface to VME and provide control logic for numerous
+systems. The building blocks of these logic designs can be tailored to the
+individual needs of each system and provide system operators with read-backs
+and controls via a VME interface to an EPICS based computer. This versatility
+allows the system developer to choose components and define operating
+parameters and options that are not readily available commercially. Jefferson
+Lab has begun developing standard FPGA libraries that result in quick turn
+around times and inexpensive designs.
+</summary>
+    <author>
+      <name>T. Allison</name>
+    </author>
+    <author>
+      <name>R. Flood</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">3 pages, ICALEPCS 2001, T. Allison and R. Foold, Jefferson Lab</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">eConf C011127:TUAP053,2001</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/0111029v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/0111029v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="B.6.0;B.1.0;B.2.0" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/0111030v1</id>
+    <updated>2001-11-09T16:04:17Z</updated>
+    <published>2001-11-09T16:04:17Z</published>
+    <title>A Dual Digital Signal Processor VME Board For Instrumentation And
+  Control Applications</title>
+    <summary>  A Dual Digital Signal Processing VME Board was developed for the Continuous
+Electron Beam Accelerator Facility (CEBAF) Beam Current Monitor (BCM) system at
+Jefferson Lab. It is a versatile general-purpose digital signal processing
+board using an open architecture, which allows for adaptation to various
+applications. The base design uses two independent Texas Instrument (TI)
+TMS320C6711, which are 900 MFLOPS floating-point digital signal processors
+(DSP). Applications that require a fixed point DSP can be implemented by
+replacing the baseline DSP with the pin-for-pin compatible TMS320C6211. The
+design can be manufactured with a reduced chip set without redesigning the
+printed circuit board. For example it can be implemented as a single-channel
+DSP with no analog I/O.
+</summary>
+    <author>
+      <name>H. Dong</name>
+    </author>
+    <author>
+      <name>R. Flood</name>
+    </author>
+    <author>
+      <name>C. Hovater</name>
+    </author>
+    <author>
+      <name>J. Musson</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">3 PDF pages</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">eConf C011127:THAP049,2001</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/0111030v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/0111030v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="B.0" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/0111032v1</id>
+    <updated>2001-11-09T19:08:57Z</updated>
+    <published>2001-11-09T19:08:57Z</published>
+    <title>SNS Timing System</title>
+    <summary>  This poster describes the timing system being designed for Spallation Neutron
+Source being built at Oak Ridge National lab.
+</summary>
+    <author>
+      <name>B. oerter</name>
+    </author>
+    <author>
+      <name>R. Nelson</name>
+    </author>
+    <author>
+      <name>T. Shea</name>
+    </author>
+    <author>
+      <name>C. Sibley</name>
+    </author>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">eConf C011127 (2001) FRAT001</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/0111032v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/0111032v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="B.m" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/0207012v1</id>
+    <updated>2002-07-04T04:30:30Z</updated>
+    <published>2002-07-04T04:30:30Z</published>
+    <title>Synthesis of Low-Power Digital Circuits Derived from Binary Decision
+  Diagrams</title>
+    <summary>  This paper introduces a novel method for synthesizing digital circuits
+derived from Binary Decision Diagrams (BDDs) that can yield to reduction in
+power dissipation. The power reduction is achieved by decreasing the switching
+activity in a circuit while paying close attention to information measures as
+an optimization criterion. We first present the technique of efficient
+BDD-based computation of information measures which are used to guide the power
+optimization procedures. Using this technique, we have developed an algorithm
+of BDD reordering which leads to reducing the power consumption of the circuits
+derived from BDDs. Results produced by the synthesis on the ISCAS benchmark
+circuits are very encouraging.
+</summary>
+    <author>
+      <name>Denis V. Popel</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">4 pages, 3 figures, 1 table, ECCTD'01</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">ECCTD 2001</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/0207012v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/0207012v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="B.6.3" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/0207014v1</id>
+    <updated>2002-07-04T04:55:42Z</updated>
+    <published>2002-07-04T04:55:42Z</published>
+    <title>On the Information Engine of Circuit Design</title>
+    <summary>  This paper addresses a new approach to find a spectrum of information
+measures for the process of digital circuit synthesis. We consider the problem
+from the information engine point of view. The circuit synthesis as a whole and
+different steps of the design process (an example of decision diagram is given)
+are presented via such measurements as entropy, logical work and information
+vitality. We also introduce new information measures to provide better
+estimates of synthesis criteria. We show that the basic properties of
+information engine, such as the conservation law of information flow and the
+equilibrium law of information can be formulated.
+</summary>
+    <author>
+      <name>Denis V. Popel</name>
+    </author>
+    <author>
+      <name>Nawar Al-Hakeem</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">4 pages, 1 figure, 2 tables, MWSCAS'02</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">MWSCAS 2002</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/0207014v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/0207014v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="B.6.1" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/0405015v1</id>
+    <updated>2004-05-05T01:56:22Z</updated>
+    <published>2004-05-05T01:56:22Z</published>
+    <title>A High-Level Reconfigurable Computing Platform Software Frameworks</title>
+    <summary>  Reconfigurable computing refers to the use of processors, such as Field
+Programmable Gate Arrays (FPGAs), that can be modified at the hardware level to
+take on different processing tasks. A reconfigurable computing platform
+describes the hardware and software base on top of which modular extensions can
+be created, depending on the desired application. Such reconfigurable computing
+platforms can take on varied designs and implementations, according to the
+constraints imposed and features desired by the scope of applications. This
+paper introduces a PC-based reconfigurable computing platform software
+frameworks that is flexible and extensible enough to abstract the different
+hardware types and functionality that different PCs may have. The requirements
+of the software platform, architectural issues addressed, rationale behind the
+decisions made, and frameworks design implemented are discussed.
+</summary>
+    <author>
+      <name>Darran Nathan</name>
+    </author>
+    <author>
+      <name>Kelvin Lim Mun Kit</name>
+    </author>
+    <author>
+      <name>Kelly Choo Hon Min</name>
+    </author>
+    <author>
+      <name>Philip Wong Jit Chin</name>
+    </author>
+    <author>
+      <name>Andreas Weisensee</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">4 pages, 8 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/cs/0405015v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/0405015v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="D.2.11" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/0407019v2</id>
+    <updated>2012-04-12T10:53:59Z</updated>
+    <published>2004-07-08T06:52:37Z</published>
+    <title>Stochastic fuzzy controller</title>
+    <summary>  A standard approach to building a fuzzy controller based on stochastic logic
+uses binary random signals with an average (expected value of a random
+variable) in the range [0, 1]. A different approach is presented, founded on a
+representation of the membership functions with the probability density
+functions.
+</summary>
+    <author>
+      <name>Franc Jurkovic</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Withdrawn by the author</arxiv:comment>
+    <link href="http://arxiv.org/abs/cs/0407019v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/0407019v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="B.0" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/0407032v1</id>
+    <updated>2004-07-13T08:24:37Z</updated>
+    <published>2004-07-13T08:24:37Z</published>
+    <title>Exposing Software Defined Radio Functionality To Native Operating System
+  Applications via Virtual Devices</title>
+    <summary>  Many reconfigurable platforms require that applications be written
+specifically to take advantage of the reconfigurable hardware. In a PC-based
+environment, this presents an undesirable constraint in that the many already
+available applications cannot leverage on such hardware. Greatest benefit can
+only be derived from reconfigurable devices if even native OS applications can
+transparently utilize reconfigurable devices as they would normal full-fledged
+hardware devices. This paper presents how Proteus Virtual Devices are used to
+expose reconfigurable hardware in a transparent manner for use by typical
+native OS applications.
+</summary>
+    <author>
+      <name>Darran Nathan</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">4 pages, 9 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/cs/0407032v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/0407032v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="D.2.11" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/0409025v1</id>
+    <updated>2004-09-13T11:08:09Z</updated>
+    <published>2004-09-13T11:08:09Z</published>
+    <title>Topics in asynchronous systems</title>
+    <summary>  In the paper we define and characterize the asynchronous systems from the
+point of view of their autonomy, determinism, order, non-anticipation, time
+invariance, symmetry, stability and other important properties. The study is
+inspired by the models of the asynchronous circuits.
+</summary>
+    <author>
+      <name>Serban E. Vlad</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">40 pages</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Analele Universitatii din Oradea, Fascicola Matematica, TOM X,
+  2003</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/0409025v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/0409025v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="B.0" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>
