@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3Dcat%3Acs.AR%26id_list%3D%26start%3D0%26max_results%3D1" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=cat:cs.AR&amp;id_list=&amp;start=0&amp;max_results=1</title>
+  <id>http://arxiv.org/api/sG25IQmIB/bRKrngTKW+8l3mzoo</id>
+  <updated>2024-04-30T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">4817</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9810011v1</id>
+    <updated>1998-10-12T10:11:05Z</updated>
+    <published>1998-10-12T10:11:05Z</published>
+    <title>Flysig: Dataflow Oriented Delay-Insensitive Processor for Rapid
+  Prototyping of Signal Processing</title>
+    <summary>  As the one-chip integration of HW-modules designed by different companies
+becomes more and more popular reliability of a HW-design and evaluation of the
+timing behavior during the prototype stage are absolutely necessary. One way to
+guarantee reliability is the use of robust design styles, e.g.,
+delay-insensitivity. For early timing evaluation two aspects must be
+considered: a) The timing needs to be proportional to technology variations and
+b) the implemented architecture should be identical for prototype and target.
+The first can be met also by delay-insensitive implementation. The latter one
+is the key point. A unified architecture is needed for prototyping as well as
+implementation. Our new approach to rapid prototyping of signal processing
+tasks is based on a configurable, delay-insensitive implemented processor
+called Flysig. In essence, the Flysig processor can be understood as a complex
+FPGA where the CLBs are substituted by bit-serial operators. In this paper the
+general concept is detailed and first experimental results are given for
+demonstration of the main advantages: delay-insensitive design style, direct
+correspondence between prototyping and target architecture, high performance
+and reasonable shortening of the design cycle.
+</summary>
+    <author>
+      <name>Wolfram Hardt</name>
+    </author>
+    <author>
+      <name>Bernd Kleinjohann</name>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1109/IWRSP.1998.676682</arxiv:doi>
+    <link title="doi" href="http://dx.doi.org/10.1109/IWRSP.1998.676682" rel="related"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">6 pages, 10 figures</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Nineth IEEE International Workshop on Rapid System Prototyping
+  1998, Belgium, IEEE Computer Society Press</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9810011v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9810011v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="C.1.3; C.3" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3Dcat%3Acs.AI%26id_list%3D%26start%3D0%26max_results%3D1" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=cat:cs.AI&amp;id_list=&amp;start=0&amp;max_results=1</title>
+  <id>http://arxiv.org/api/HQttLwSI9ar2vqfmj4lJ7u3JUas</id>
+  <updated>2024-04-30T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">87874</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9308101v1</id>
+    <updated>1993-08-01T00:00:00Z</updated>
+    <published>1993-08-01T00:00:00Z</published>
+    <title>Dynamic Backtracking</title>
+    <summary>  Because of their occasional need to return to shallow points in a search
+tree, existing backtracking methods can sometimes erase meaningful progress
+toward solving a search problem. In this paper, we present a method by which
+backtrack points can be moved deeper in the search space, thereby avoiding this
+difficulty. The technique developed is a variant of dependency-directed
+backtracking that uses only polynomial space while still providing useful
+control information and retaining the completeness guarantees provided by
+earlier approaches.
+</summary>
+    <author>
+      <name>M. L. Ginsberg</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for an online appendix and other files
+  accompanying this article</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1993), 25-46</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9308101v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9308101v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>
+
