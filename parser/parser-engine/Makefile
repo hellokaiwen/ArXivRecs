@@ -10,7 +10,7 @@ parser: parser.o
 	gcc parser.o -o parser
 
 main: parser.o main.o
-	gcc main.o parser.o -o main
+	gcc main.o parser.o -lcurl -o main
 
 .PHONY: clean
 
