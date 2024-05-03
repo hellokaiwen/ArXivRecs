@@ -1,15 +1,16 @@
-#include <sys/stat.h>
-#include "parser.h"
+#include <libxml2/libxml/parser.h>
+#include "parse.h"
 
 /**
  * Assume START and MAX are always preceded by a type of search query
  * (e.g., cat, au, etc.).
- * **/
+ **/
 #define DEFAULT_URL "http://export.arxiv.org/api/query?search_query="
-#define CAT "cat:"
 #define START "&start="
 #define MAX "&max_results="
+
 #define MAX_RESULTS 10
+#define MAX_LINE_SIZE 256
 
 struct _xml_t {
     uint8_t* content;
@@ -74,10 +75,10 @@ size_t _write_callback(void* ptr, size_t size, size_t nmemb, void* data) {
     return total_size;
 }
 
-char* build_query(size_t start, const char* category) {
+char* _build_query(const char* opt, const char* searched, size_t start) {
     char* start_str = _int2str(start);
     char* max_str = _int2str(MAX_RESULTS);
-	size_t length = strlen(DEFAULT_URL) + strlen(CAT) + strlen(category) +
+	size_t length = strlen(DEFAULT_URL) + strlen(opt) + strlen(":") + strlen(searched) +
                     strlen(START) + strlen(start_str) + strlen(MAX) + strlen(max_str);
 	char* query = malloc(sizeof(char) * (length + 1));
 	if (query == NULL) {
@@ -86,8 +87,9 @@ char* build_query(size_t start, const char* category) {
 	}
 	strncpy(query, DEFAULT_URL, strlen(DEFAULT_URL));
 	query[strlen(DEFAULT_URL)] = '\0';
-	strncat(query, CAT, strlen(CAT));
-	strncat(query, category, strlen(category));
+	strncat(query, opt, strlen(opt));
+    strncat(query, ":", strlen(":"));
+	strncat(query, searched, strlen(searched));
     strncat(query, START, strlen(START));
     strncat(query, start_str, strlen(start_str));
     strncat(query, MAX, strlen(MAX));
@@ -96,18 +98,9 @@ char* build_query(size_t start, const char* category) {
 	return query;
 }
 
-int fetch_response(const size_t* starts, const char** args) {
-    /**
-     * Get the number of categories the user has selected for
-     * recommendation.
-     * **/
+int fetch_response(const char* search_option, const char** args, const size_t* starts) {
     size_t num_cats = 0;
     for (size_t i = 1; args[i]; i++) { num_cats++; }
-    /**
-     * For each selected category, fork a new process where an API
-     * call is made to fetch all the corresponding papers.
-     * TODO: try to limit the number of papers fetched.
-     * **/
 	int fds[num_cats + 1][2];
 	for (size_t i = 1; i <= num_cats; i++) {
 		if (pipe(fds[i]) < 0) {
@@ -122,8 +115,7 @@ int fetch_response(const size_t* starts, const char** args) {
 			for (size_t j = 1; j <= i; j++) {
 				close(fds[j][0]);
 			}
-			char* request = build_query(starts[i], args[i]);
-            printf("[child] request : %s\n", request);
+			char* request = _build_query(search_option, args[i], starts[i]);
 			if (request == NULL) {
 				close(fds[i][1]);
 				exit(1);
@@ -234,9 +226,11 @@ cleanup:
     return exit_code;
 }
 
-/**
-
- * **/
-struct paper_t* parse(const char* src) {
+struct paper_t* parse(const char* path) {
+//    xmlDoc* document;
+//    xmlNode* root;
+//    document = xmlReadFile(path, NULL, 0);
+//    root = xmlDocGetRootElement(document);
+//    printf("root->name : %s\n", root->name);
     return NULL;
 }

@@ -10,9 +10,7 @@
 #include <sys/wait.h>
 #include <curl/curl.h>
 
-
 #define RESPONSE_LOC "../parser-tmp/response.xml"
-#define NAMESPACE "ns=\"http://www.w3.org/2005/Atom\""
 
 struct author_t {
     char* name;
@@ -27,10 +25,7 @@ struct paper_t {
     char* jour_ref;
 };
 
-
-char* build_query(size_t, const char*);
-
-int fetch_response(const size_t*, const char**);
+int fetch_response(const char*, const char**, const size_t*);
 
 struct paper_t* parse(const char*);
 
